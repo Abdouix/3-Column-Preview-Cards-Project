@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    width: 780px;
+    margin-left: 15%;
+}
+
+.cards div {
+    height: 450px;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    justify-content: center;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 40px;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    transition: 0.7s ease;
+}
+
+.suvs {
+    background-color: hsl(185, 98%, 23%);
+    padding: 40px;
+    transition: 0.7s ease;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 40px;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    transition: 0.7s ease;
+}
+
+.headings{
+    color: white;
+}
+.text {
+    margin-bottom: 92px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.logo, .headings {
+    margin-bottom: 25px;
+}
+
+.headings {
+    font-size: 22px;
+}
+
+.btn-one, .btn-two, .btn-three {
+    text-decoration: none;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 1.5em;
+}
+
+.btn-one {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-two {
+    color: hsl(185, 98%, 23%);
+}
+
+.btn-three {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedans:hover {
+    transform: scale(1.07);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.suvs:hover {
+    transform: scale(1.07);
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+.luxury:hover {
+    transform: scale(1.07);
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+
+
+/* Responsiveness */
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .sedans {
+        width: 800px;
+        padding: 0px;
+    }
+    .suvs {
+        width: 800px;
+        padding: 0px;
+    }
+    .luxury {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+      /* For mobile phones: */
+    .sedans, .suvs, .luxury {
+        width: 100%;
+    }
+}
